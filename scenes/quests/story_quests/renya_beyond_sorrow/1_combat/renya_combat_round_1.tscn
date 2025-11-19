@@ -1,29 +1,26 @@
-[gd_scene load_steps=29 format=4 uid="uid://cqia8wihr6512"]
+[gd_scene load_steps=26 format=4 uid="uid://cqia8wihr6512"]
 
 [ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="1_0sehy"]
 [ext_resource type="AudioStream" uid="uid://dgwihwibc8ah6" path="res://assets/first_party/music/Threadbare_Combat.ogg" id="2_1q4ne"]
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="3_fmi44"]
-[ext_resource type="Resource" uid="uid://ctmbv8jkb5j48" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_moscas/components/dialogues/renya_combat.dialogue" id="4_75x6t"]
+[ext_resource type="Resource" uid="uid://ctmbv8jkb5j48" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/components/dialogues/renya_combat.dialogue" id="4_75x6t"]
 [ext_resource type="TileSet" uid="uid://dmg13wgcc7so5" path="res://scenes/quests/story_quests/renya_beyond_sorrow/renya_tileset.tres" id="5_o60la"]
 [ext_resource type="PackedScene" uid="uid://crqjcicx0vdu" path="res://scenes/game_elements/props/decoration/bush/bush.tscn" id="6_ulko6"]
-[ext_resource type="SpriteFrames" uid="uid://bxe8tg855s145" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_moscas/bush/components/bush_spriteframes_purple_large.tres" id="7_5mbgn"]
+[ext_resource type="SpriteFrames" uid="uid://bxe8tg855s145" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/components/decoration/bush/components/bush_spriteframes_purple_large.tres" id="7_5mbgn"]
 [ext_resource type="PackedScene" uid="uid://lgu7aeqa7o3r" path="res://scenes/game_elements/props/door/door.tscn" id="7_ilmvt"]
 [ext_resource type="Script" uid="uid://hqdquinbimce" path="res://scenes/game_elements/props/teleporter/teleporter/components/teleporter.gd" id="8_gdj00"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="9_d7n4r"]
 [ext_resource type="SpriteFrames" uid="uid://h5omfgpsbww3" path="res://scenes/quests/story_quests/renya_beyond_sorrow/player_components/renya_player_general.tres" id="10_o60la"]
 [ext_resource type="PackedScene" uid="uid://b82nsrh332syj" path="res://scenes/game_elements/characters/enemies/throwing_enemy/throwing_enemy.tscn" id="11_28os0"]
-[ext_resource type="SpriteFrames" uid="uid://b3r84ksew5djp" path="res://scenes/game_elements/characters/enemies/throwing_enemy/components/ink_drinker_frames_purple.tres" id="12_bsras"]
+[ext_resource type="SpriteFrames" uid="uid://bokxlhx5dswn2" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/enemies_components/ira_enemy_spriteframes.tres" id="13_goiri"]
 [ext_resource type="AudioStream" uid="uid://qf2d38rabx8o" path="res://assets/third_party/sounds/characters/enemies/throwing_enemy/Wings.ogg" id="13_jvpbg"]
 [ext_resource type="AudioStream" uid="uid://fcmjf1srys7n" path="res://assets/third_party/sounds/characters/enemies/throwing_enemy/Spit.ogg" id="14_y5lpn"]
-[ext_resource type="SpriteFrames" uid="uid://bhamin2pby7tq" path="res://scenes/game_elements/props/projectile/components/inkblob_spriteframes.tres" id="15_7pnwg"]
-[ext_resource type="AudioStream" uid="uid://7jlv4wqpihl7" path="res://scenes/game_elements/props/projectile/components/blob_hit.wav" id="16_p7tjk"]
-[ext_resource type="PackedScene" uid="uid://clgisducnnh0a" path="res://scenes/game_elements/fx/liquid_small_splat/liquid_small_splat.tscn" id="17_ya2tl"]
-[ext_resource type="PackedScene" uid="uid://b4qu6wml5gd7a" path="res://scenes/game_elements/fx/liquid_big_splat/liquid_big_splat.tscn" id="18_g5p1a"]
-[ext_resource type="PackedScene" uid="uid://bgce3qns72g3m" path="res://scenes/game_elements/fx/liquid_trail.tscn" id="19_pilai"]
+[ext_resource type="SpriteFrames" uid="uid://478kw5lbumtn" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/enemies_components/projectile_spriteframes.tres" id="16_goiri"]
+[ext_resource type="SpriteFrames" uid="uid://lt1fwrvd4a5h" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/relleno/filling_spriteframes.tres" id="18_l4apx"]
 [ext_resource type="PackedScene" uid="uid://y8ha8abfyap2" path="res://scenes/game_elements/props/filling_barrel/filling_barrel.tscn" id="20_6urbs"]
 [ext_resource type="PackedScene" uid="uid://dkx3dgc1br3b4" path="res://scenes/ui_elements/input_hints/repel_hint.tscn" id="22_28yyq"]
-[ext_resource type="PackedScene" uid="uid://dckcomgbkbkwu" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_moscas/tree/tree.tscn" id="22_e8dsv"]
-[ext_resource type="SpriteFrames" uid="uid://cyhwjliscqdbb" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_moscas/tree/components/tree_spriteframes_purple.tres" id="23_6axrc"]
+[ext_resource type="PackedScene" uid="uid://dckcomgbkbkwu" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/components/decoration/tree/tree.tscn" id="22_e8dsv"]
+[ext_resource type="SpriteFrames" uid="uid://cyhwjliscqdbb" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/components/decoration/tree/components/tree_spriteframes_purple.tres" id="23_6axrc"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="23_vhod7"]
 
 [sub_resource type="Animation" id="Animation_nlryc"]
@@ -169,31 +166,22 @@ editor_draw_limits = true
 position = Vector2(352, 24)
 
 [node name="ThrowingEnemy" parent="OnTheGround" instance=ExtResource("11_28os0")]
-position = Vector2(101, -783)
-sprite_frames = ExtResource("12_bsras")
-idle_sound_stream = ExtResource("13_jvpbg")
-attack_sound_stream = ExtResource("14_y5lpn")
-projectile_sprite_frames = ExtResource("15_7pnwg")
-projectile_hit_sound_stream = ExtResource("16_p7tjk")
-projectile_small_fx_scene = ExtResource("17_ya2tl")
-projectile_big_fx_scene = ExtResource("18_g5p1a")
-projectile_trail_fx_scene = ExtResource("19_pilai")
+position = Vector2(99, -813)
+sprite_frames = ExtResource("13_goiri")
+projectile_sprite_frames = ExtResource("16_goiri")
 
 [node name="ThrowingEnemy2" parent="OnTheGround" instance=ExtResource("11_28os0")]
-position = Vector2(596, -780)
-sprite_frames = ExtResource("12_bsras")
+position = Vector2(611, -810)
+sprite_frames = ExtResource("13_goiri")
 idle_sound_stream = ExtResource("13_jvpbg")
 attack_sound_stream = ExtResource("14_y5lpn")
-projectile_sprite_frames = ExtResource("15_7pnwg")
-projectile_hit_sound_stream = ExtResource("16_p7tjk")
-projectile_small_fx_scene = ExtResource("17_ya2tl")
-projectile_big_fx_scene = ExtResource("18_g5p1a")
-projectile_trail_fx_scene = ExtResource("19_pilai")
+projectile_sprite_frames = ExtResource("16_goiri")
 
 [node name="FillingBarrel" parent="OnTheGround" instance=ExtResource("20_6urbs")]
 position = Vector2(32, -559)
+sprite_frames = ExtResource("18_l4apx")
 label = "Cyan"
-color = Color(0, 1, 1, 1)
+color = Color(0.9981455, 0.7850066, 0.22345269, 1)
 
 [node name="FillingBarrel2" parent="OnTheGround" instance=ExtResource("20_6urbs")]
 position = Vector2(672, -557)
