@@ -68,7 +68,7 @@ folder_colors={
 "res://scenes/quests/lore_quests/": "purple",
 "res://scenes/quests/story_quests/": "green",
 "res://scenes/quests/story_quests/NO_EDIT/": "yellow",
-"res://scenes/quests/story_quests/renya_beyond_sorrow/": "red"
+"res://scenes/quests/story_quests/renya_beyond_sorrow/": "green"
 }
 
 [global_group]

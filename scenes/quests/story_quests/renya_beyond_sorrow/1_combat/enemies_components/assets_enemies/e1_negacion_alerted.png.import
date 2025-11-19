@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bn0f3xc3tuqxn"
-path="res://.godot/imported/e1_negociacion_defeated.png-7fd82b8b5af737da035b215af86b361c.ctex"
+uid="uid://dnsvkkum7r6qi"
+path="res://.godot/imported/e1_negacion_alerted.png-b47e857a209e08f9f3c32ff15b67d073.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/enemies_components/assets_enemies/e1_negociacion_defeated.png"
-dest_files=["res://.godot/imported/e1_negociacion_defeated.png-7fd82b8b5af737da035b215af86b361c.ctex"]
+source_file="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/enemies_components/assets_enemies/e1_negacion_alerted.png"
+dest_files=["res://.godot/imported/e1_negacion_alerted.png-b47e857a209e08f9f3c32ff15b67d073.ctex"]
 
 [params]
 

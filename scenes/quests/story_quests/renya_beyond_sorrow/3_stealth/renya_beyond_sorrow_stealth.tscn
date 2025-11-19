@@ -1,22 +1,24 @@
-[gd_scene load_steps=64 format=4 uid="uid://bnrkqt6j6ph7u"]
+[gd_scene load_steps=66 format=4 uid="uid://bnrkqt6j6ph7u"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_ay8xn"]
+[ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="1_pjol6"]
+[ext_resource type="AudioStream" uid="uid://cpd7rae852ucp" path="res://scenes/quests/story_quests/renya_beyond_sorrow/Complementos/music/6. Embers of Hope (Loop).mp3" id="2_7ilhc"]
 [ext_resource type="TileSet" uid="uid://dmg13wgcc7so5" path="res://scenes/quests/story_quests/renya_beyond_sorrow/renya_tileset.tres" id="2_f8t42"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="3_f8t42"]
 [ext_resource type="SpriteFrames" uid="uid://h5omfgpsbww3" path="res://scenes/quests/story_quests/renya_beyond_sorrow/player_components/renya_player_general.tres" id="4_aeq5k"]
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="5_1nlpk"]
-[ext_resource type="SpriteFrames" uid="uid://c2hadyx2oifm1" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_stealth/stealth_components/renya_beyond_sorrow_guard_enemy.tres" id="6_kqwvh"]
-[ext_resource type="Texture2D" uid="uid://cdchuvxrcnfjk" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_alerted.png" id="7_aeq5k"]
+[ext_resource type="SpriteFrames" uid="uid://c2hadyx2oifm1" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/renya_beyond_sorrow_guard_enemy.tres" id="6_kqwvh"]
+[ext_resource type="Texture2D" uid="uid://cdchuvxrcnfjk" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_alerted.png" id="7_aeq5k"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="7_vabjb"]
-[ext_resource type="Resource" uid="uid://by6kjm8sh7sx8" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_stealth/stealth_components/renya_beyond_sorrow_checkpoint.dialogue" id="8_1mg1v"]
-[ext_resource type="Texture2D" uid="uid://nusgh8qbbi4x" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_idle.png" id="8_1nlpk"]
-[ext_resource type="Texture2D" uid="uid://c37p6t7178fe2" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_walk.png" id="9_kqwvh"]
+[ext_resource type="Resource" uid="uid://by6kjm8sh7sx8" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/renya_beyond_sorrow_checkpoint.dialogue" id="8_1mg1v"]
+[ext_resource type="Texture2D" uid="uid://nusgh8qbbi4x" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_idle.png" id="8_1nlpk"]
+[ext_resource type="Texture2D" uid="uid://c37p6t7178fe2" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_walk.png" id="9_kqwvh"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="9_pnswv"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="10_k330u"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="11_x3apo"]
-[ext_resource type="Resource" uid="uid://c1gowkhyn68ih" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_stealth/stealth_components/renya_beyond_sorrow_collected.dialogue" id="12_1cfkr"]
+[ext_resource type="Resource" uid="uid://c1gowkhyn68ih" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/renya_beyond_sorrow_collected.dialogue" id="12_1cfkr"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="13_m7vwu"]
-[ext_resource type="Resource" uid="uid://c3ljyi2iw3duc" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_stealth/stealth_components/renya_beyond_sorrow_stealth.dialogue" id="14_ooi2f"]
+[ext_resource type="Resource" uid="uid://c3ljyi2iw3duc" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/renya_beyond_sorrow_stealth.dialogue" id="14_ooi2f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7yuat"]
 atlas = ExtResource("7_aeq5k")
@@ -790,6 +792,9 @@ size = Vector2(133.5, 112)
 [node name="StealthTemplateLevel" type="Node2D"]
 y_sort_enabled = true
 
+[node name="BackgroundMusic" parent="." instance=ExtResource("1_pjol6")]
+stream = ExtResource("2_7ilhc")
+
 [node name="StealthGameLogic" type="Node" parent="."]
 script = ExtResource("1_ay8xn")
 
@@ -835,6 +840,7 @@ tile_map_data = PackedByteArray("AAABAAUABAAAAAQAAAACAAUABAABAAEAAAADAAUABAABAAI
 tile_set = ExtResource("2_f8t42")
 
 [node name="decoraciones" type="TileMapLayer" parent="TileMapLayers"]
+modulate = Color(0.5686275, 0.4392157, 0.95686275, 1)
 tile_map_data = PackedByteArray("AAAIAAkAEAAEAAQAAAAIAAgAEAAEAAMAAAAHAAgAEAADAAMAAAAHAAkAEAADAAQAAAAHAAUAEAAFAAIAAAAIAAUAEAAGAAIAAAAHAAYAEAAFAAMAAAAHAAcAEAAFAAQAAAAIAAYAEAAGAAMAAAAIAAcAEAAGAAQAAAABAAYAEAAAAAAAAAABAAcAEAAAAAEAAAACAAYAEAABAAAAAAACAAcAEAABAAEAAAAFAAwAAwAAAAEAAAAFAA0AAwAAAAIAAAAFAA4AAwAAAAIAAAAFAA8AAwAAAAIAAAAFABAAAwAAAAIAAAAFABEAAwAAAAIAAAAFABIAAwAAAAMAAAAOABIAEAADAAMAAAAOABMAEAADAAQAAAAPABIAEAAEAAMAAAAPABMAEAAEAAQAAAAZABUAAwABAAAAAAAaABUAAwABAAAAAAAbABUAAwABAAAAAAAcABUAAwABAAAAAAAdABUAAwABAAAAAAAeABUAAwABAAAAAAAfABUAAwABAAAAAAAgABUAAwACAAAAAAAXABIAEAAEAAMAAAAXABMAEAAEAAQAAAAWABIAEAADAAMAAAAWABMAEAADAAQAAAAXAA0AEAADAAMAAAAXAA4AEAADAAQAAAAYAA0AEAAEAAMAAAAYAA4AEAAEAAQAAAAaAAwAEAAAAAMAAAAaAA0AEAAAAAQAAAAbAAwAEAABAAMAAAAbAA0AEAABAAQAAAAaAAsAEAAAAAIAAAAbAAsAEAABAAIAAAAkAAwAAwAAAAIAAAAkAA0AAwAAAAIAAAAkAA4AAwAAAAIAAAAkAA8AAwAAAAIAAAAkABAAAwAAAAMAAAAkAAsAAwAAAAEAAAAzAAsAAwAAAAEAAAAzAAwAAwAAAAIAAAAzAA0AAwAAAAIAAAAzAA4AAwAAAAIAAAAzAA8AAwAAAAIAAAAzABAAAwAAAAIAAAAzABEAAwAAAAMAAAAYABUAAwAAAAAAAAA=")
 tile_set = ExtResource("2_f8t42")
 

@@ -1,12 +1,14 @@
-[gd_scene load_steps=28 format=4 uid="uid://bkri3sutwl4uq"]
+[gd_scene load_steps=29 format=4 uid="uid://bkri3sutwl4uq"]
 
+[ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="1_d7j0d"]
 [ext_resource type="TileSet" uid="uid://dmg13wgcc7so5" path="res://scenes/quests/story_quests/renya_beyond_sorrow/renya_tileset.tres" id="1_w3j0n"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="2_aircv"]
+[ext_resource type="AudioStream" uid="uid://dgjcy14veuyxp" path="res://scenes/quests/story_quests/renya_beyond_sorrow/Complementos/music/2. Whispers of Yesterday (Loop).mp3" id="2_d7j0d"]
 [ext_resource type="SpriteFrames" uid="uid://h5omfgpsbww3" path="res://scenes/quests/story_quests/renya_beyond_sorrow/player_components/renya_player_general.tres" id="3_vgduh"]
 [ext_resource type="Script" uid="uid://c68oh8dtr21ti" path="res://scenes/game_logic/sequence_puzzle.gd" id="4_1s6dc"]
 [ext_resource type="PackedScene" uid="uid://b8sok264erfoc" path="res://scenes/game_elements/props/sequence_puzzle_object/sequence_puzzle_object.tscn" id="5_jo4hc"]
-[ext_resource type="SpriteFrames" uid="uid://c8yuvi46f0te7" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_sequence_puzzle/renya_object_ver2.tres" id="6_aircv"]
-[ext_resource type="SpriteFrames" uid="uid://dgtmcd2w0yo0e" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_sequence_puzzle/renya_object.tres" id="6_s3vv2"]
+[ext_resource type="SpriteFrames" uid="uid://c8yuvi46f0te7" path="res://scenes/quests/story_quests/renya_beyond_sorrow/2_sequence_puzzle/components/renya_object_ver2.tres" id="6_aircv"]
+[ext_resource type="SpriteFrames" uid="uid://dgtmcd2w0yo0e" path="res://scenes/quests/story_quests/renya_beyond_sorrow/2_sequence_puzzle/components/renya_object.tres" id="6_s3vv2"]
 [ext_resource type="AudioStream" uid="uid://cg57q82pb243w" path="res://assets/third_party/nepalese_hand_bells/handBells-c4.ogg" id="7_nwtka"]
 [ext_resource type="AudioStream" uid="uid://b83x8h0ob5mpq" path="res://assets/third_party/nepalese_hand_bells/handBells-d4.ogg" id="8_yw2dt"]
 [ext_resource type="AudioStream" uid="uid://cmtiwg2cylmts" path="res://assets/third_party/nepalese_hand_bells/handBells-e4.ogg" id="9_63qpu"]
@@ -14,12 +16,12 @@
 [ext_resource type="AudioStream" uid="uid://6oahn2ucxxjv" path="res://assets/third_party/nepalese_hand_bells/handBells-g4.ogg" id="11_wejiw"]
 [ext_resource type="AudioStream" uid="uid://bdboi4ndapqec" path="res://assets/third_party/nepalese_hand_bells/handBells-a4.ogg" id="12_kcyae"]
 [ext_resource type="PackedScene" uid="uid://be4o3ythda4cu" path="res://scenes/game_elements/props/sequence_puzzle_hint_sign/sequence_puzzle_hint_sign.tscn" id="13_a0jcn"]
-[ext_resource type="SpriteFrames" uid="uid://c4lelvwvj41op" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_sequence_puzzle/renya_beyond_sorrow_sign.tres" id="14_t2o70"]
-[ext_resource type="SpriteFrames" uid="uid://b4swsfng58ikl" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_sequence_puzzle/renya_beyond_sorrow_sign_2.tres" id="15_tr7dq"]
+[ext_resource type="SpriteFrames" uid="uid://c4lelvwvj41op" path="res://scenes/quests/story_quests/renya_beyond_sorrow/2_sequence_puzzle/components/renya_beyond_sorrow_sign.tres" id="14_t2o70"]
+[ext_resource type="SpriteFrames" uid="uid://b4swsfng58ikl" path="res://scenes/quests/story_quests/renya_beyond_sorrow/2_sequence_puzzle/components/renya_beyond_sorrow_sign_2.tres" id="15_tr7dq"]
 [ext_resource type="Script" uid="uid://ccc78coj2b1li" path="res://scenes/game_logic/sequence_puzzle_step.gd" id="16_jj8cg"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="17_5myqv"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="18_xxhkl"]
-[ext_resource type="Resource" uid="uid://kh4o027dgo6k" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_sequence_puzzle/renya_beyond_sorrow_sequence_puzzle.dialogue" id="19_j7r3o"]
+[ext_resource type="Resource" uid="uid://kh4o027dgo6k" path="res://scenes/quests/story_quests/renya_beyond_sorrow/2_sequence_puzzle/components/dialogue/renya_beyond_sorrow_sequence_puzzle.dialogue" id="19_j7r3o"]
 [ext_resource type="PackedScene" uid="uid://covsdqqsd6rsy" path="res://scenes/game_elements/props/sign/sign.tscn" id="20_68hfe"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="21_vm8rx"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="22_l45x2"]
@@ -35,9 +37,10 @@ size = Vector2(642, 193.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sxsfa"]
 size = Vector2(579.75, 195.5)
 
-[sub_resource type="AudioStream" id="AudioStream_hskto"]
-
 [node name="SequencePuzzleTemplate" type="Node2D"]
+
+[node name="BackgroundMusic" parent="." instance=ExtResource("1_d7j0d")]
+stream = ExtResource("2_d7j0d")
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 
@@ -176,8 +179,5 @@ shape = SubResource("RectangleShape2D_hskto")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(928.125, 554.25)
 shape = SubResource("RectangleShape2D_sxsfa")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = SubResource("AudioStream_hskto")
 
 [connection signal="solved" from="OnTheGround/SequencePuzzle" to="OnTheGround/CollectibleItem" method="reveal"]

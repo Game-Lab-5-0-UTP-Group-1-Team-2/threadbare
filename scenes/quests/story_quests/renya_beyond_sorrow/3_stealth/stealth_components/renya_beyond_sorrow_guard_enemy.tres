@@ -1,8 +1,8 @@
 [gd_resource type="SpriteFrames" load_steps=16 format=3 uid="uid://c2hadyx2oifm1"]
 
-[ext_resource type="Texture2D" uid="uid://cdchuvxrcnfjk" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_alerted.png" id="1_pulwa"]
-[ext_resource type="Texture2D" uid="uid://nusgh8qbbi4x" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_idle.png" id="2_p74sx"]
-[ext_resource type="Texture2D" uid="uid://c37p6t7178fe2" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_walk.png" id="3_aqioi"]
+[ext_resource type="Texture2D" uid="uid://cdchuvxrcnfjk" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_alerted.png" id="1_pulwa"]
+[ext_resource type="Texture2D" uid="uid://nusgh8qbbi4x" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_idle.png" id="2_p74sx"]
+[ext_resource type="Texture2D" uid="uid://c37p6t7178fe2" path="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_walk.png" id="3_aqioi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7yuat"]
 atlas = ExtResource("1_pulwa")

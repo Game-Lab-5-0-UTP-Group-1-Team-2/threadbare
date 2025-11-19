@@ -1,7 +1,7 @@
-[gd_scene load_steps=27 format=4 uid="uid://buvo0sgtr3qeg"]
+[gd_scene load_steps=21 format=4 uid="uid://buvo0sgtr3qeg"]
 
 [ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="1_igvqa"]
-[ext_resource type="AudioStream" uid="uid://dgwihwibc8ah6" path="res://assets/first_party/music/Threadbare_Combat.ogg" id="2_goqtp"]
+[ext_resource type="AudioStream" uid="uid://m3utsrhd2bc3" path="res://scenes/quests/story_quests/renya_beyond_sorrow/Complementos/music/7. Silent Longing (Loop).mp3" id="2_ktwuu"]
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="3_s61i2"]
 [ext_resource type="TileSet" uid="uid://dmg13wgcc7so5" path="res://scenes/quests/story_quests/renya_beyond_sorrow/renya_tileset.tres" id="4_kr32a"]
 [ext_resource type="PackedScene" uid="uid://crqjcicx0vdu" path="res://scenes/game_elements/props/decoration/bush/bush.tscn" id="5_r7kal"]
@@ -12,15 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="8_fhg3o"]
 [ext_resource type="SpriteFrames" uid="uid://h5omfgpsbww3" path="res://scenes/quests/story_quests/renya_beyond_sorrow/player_components/renya_player_general.tres" id="9_qbjh4"]
 [ext_resource type="PackedScene" uid="uid://b82nsrh332syj" path="res://scenes/game_elements/characters/enemies/throwing_enemy/throwing_enemy.tscn" id="10_krssa"]
-[ext_resource type="SpriteFrames" uid="uid://bs0idpewu2plj" path="res://scenes/game_elements/characters/enemies/throwing_enemy/components/ink_drinker_frames_yellow.tres" id="11_t16x8"]
-[ext_resource type="AudioStream" uid="uid://qf2d38rabx8o" path="res://assets/third_party/sounds/characters/enemies/throwing_enemy/Wings.ogg" id="12_1apqh"]
-[ext_resource type="AudioStream" uid="uid://fcmjf1srys7n" path="res://assets/third_party/sounds/characters/enemies/throwing_enemy/Spit.ogg" id="13_x8j2p"]
-[ext_resource type="SpriteFrames" uid="uid://bhamin2pby7tq" path="res://scenes/game_elements/props/projectile/components/inkblob_spriteframes.tres" id="14_mrd3n"]
-[ext_resource type="AudioStream" uid="uid://7jlv4wqpihl7" path="res://scenes/game_elements/props/projectile/components/blob_hit.wav" id="15_ccrxb"]
-[ext_resource type="PackedScene" uid="uid://clgisducnnh0a" path="res://scenes/game_elements/fx/liquid_small_splat/liquid_small_splat.tscn" id="16_jrxsu"]
-[ext_resource type="PackedScene" uid="uid://b4qu6wml5gd7a" path="res://scenes/game_elements/fx/liquid_big_splat/liquid_big_splat.tscn" id="17_25bbs"]
-[ext_resource type="PackedScene" uid="uid://bgce3qns72g3m" path="res://scenes/game_elements/fx/liquid_trail.tscn" id="18_bl3bo"]
-[ext_resource type="SpriteFrames" uid="uid://dnq8cw1cio2we" path="res://scenes/game_elements/characters/enemies/throwing_enemy/components/ink_drinker_frames_green.tres" id="19_ylw32"]
+[ext_resource type="SpriteFrames" uid="uid://ci6o3o7ti17l0" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/enemies_components/negacion_enemy_spriteframes.tres" id="13_xuftb"]
+[ext_resource type="SpriteFrames" uid="uid://478kw5lbumtn" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/enemies_components/projectile_spriteframes.tres" id="16_wnsuw"]
+[ext_resource type="SpriteFrames" uid="uid://lt1fwrvd4a5h" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/relleno/filling_spriteframes.tres" id="18_cbawa"]
 [ext_resource type="PackedScene" uid="uid://y8ha8abfyap2" path="res://scenes/game_elements/props/filling_barrel/filling_barrel.tscn" id="20_10usg"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="21_4r1d0"]
 
@@ -52,7 +46,7 @@ size = Vector2(101, 49)
 [node name="InkCombat" type="Node2D"]
 
 [node name="BackgroundMusic" parent="." instance=ExtResource("1_igvqa")]
-stream = ExtResource("2_goqtp")
+stream = ExtResource("2_ktwuu")
 
 [node name="FillGameLogic" type="Node" parent="."]
 script = ExtResource("3_s61i2")
@@ -149,53 +143,38 @@ editor_draw_limits = true
 [node name="ThrowingEnemy" parent="OnTheGround" instance=ExtResource("10_krssa")]
 position = Vector2(154, 175)
 autostart = true
-sprite_frames = ExtResource("11_t16x8")
-idle_sound_stream = ExtResource("12_1apqh")
-attack_sound_stream = ExtResource("13_x8j2p")
-projectile_sprite_frames = ExtResource("14_mrd3n")
-projectile_hit_sound_stream = ExtResource("15_ccrxb")
-projectile_small_fx_scene = ExtResource("16_jrxsu")
-projectile_big_fx_scene = ExtResource("17_25bbs")
-projectile_trail_fx_scene = ExtResource("18_bl3bo")
+sprite_frames = ExtResource("13_xuftb")
+projectile_sprite_frames = ExtResource("16_wnsuw")
 
 [node name="ThrowingEnemy2" parent="OnTheGround" instance=ExtResource("10_krssa")]
 position = Vector2(536, 558)
 autostart = true
-sprite_frames = ExtResource("19_ylw32")
-idle_sound_stream = ExtResource("12_1apqh")
-attack_sound_stream = ExtResource("13_x8j2p")
-projectile_sprite_frames = ExtResource("14_mrd3n")
-projectile_hit_sound_stream = ExtResource("15_ccrxb")
-projectile_small_fx_scene = ExtResource("16_jrxsu")
-projectile_big_fx_scene = ExtResource("17_25bbs")
-projectile_trail_fx_scene = ExtResource("18_bl3bo")
+sprite_frames = ExtResource("13_xuftb")
+projectile_sprite_frames = ExtResource("16_wnsuw")
 
 [node name="ThrowingEnemy3" parent="OnTheGround" instance=ExtResource("10_krssa")]
 position = Vector2(1053, 435)
 autostart = true
-sprite_frames = ExtResource("19_ylw32")
-idle_sound_stream = ExtResource("12_1apqh")
-attack_sound_stream = ExtResource("13_x8j2p")
-projectile_sprite_frames = ExtResource("14_mrd3n")
-projectile_hit_sound_stream = ExtResource("15_ccrxb")
-projectile_small_fx_scene = ExtResource("16_jrxsu")
-projectile_big_fx_scene = ExtResource("17_25bbs")
-projectile_trail_fx_scene = ExtResource("18_bl3bo")
+sprite_frames = ExtResource("13_xuftb")
+projectile_sprite_frames = ExtResource("16_wnsuw")
 
 [node name="FillingBarrel" parent="OnTheGround" instance=ExtResource("20_10usg")]
 position = Vector2(31, 298)
-label = "Magenta"
-color = Color(1, 0, 1, 1)
+sprite_frames = ExtResource("18_cbawa")
+label = "Negacion"
+color = Color(0.17254902, 0.7254902, 0.011764706, 1)
 
 [node name="FillingBarrel2" parent="OnTheGround" instance=ExtResource("20_10usg")]
 position = Vector2(743, 289)
-label = "Yellow"
-color = Color(1, 0.972549, 0, 1)
+sprite_frames = ExtResource("18_cbawa")
+label = "Negacion"
+color = Color(0.17254902, 0.7254902, 0.011764706, 1)
 
 [node name="FillingBarrel3" parent="OnTheGround" instance=ExtResource("20_10usg")]
 position = Vector2(1120, 302)
-label = "Yellow"
-color = Color(1, 0.972549, 0, 1)
+sprite_frames = ExtResource("18_cbawa")
+label = "Negacion"
+color = Color(0.17254902, 0.7254902, 0.011764706, 1)
 
 [node name="Door Enter" parent="OnTheGround" instance=ExtResource("6_tm1ho")]
 position = Vector2(159, 697)

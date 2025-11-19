@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dy1g35wtj572u"
-path="res://.godot/imported/renya_object_ver2.png-a18bde5ab73e1f4292c7c040d43cb288.ctex"
+uid="uid://bbxx8kawie36w"
+path="res://.godot/imported/e1_negacion_walk.png-39027856ab6046e9e2f23e903643fb75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/renya_beyond_sorrow/2_sequence_puzzle/renya_object_ver2.png"
-dest_files=["res://.godot/imported/renya_object_ver2.png-a18bde5ab73e1f4292c7c040d43cb288.ctex"]
+source_file="res://scenes/quests/story_quests/renya_beyond_sorrow/1_combat/enemies_components/assets_enemies/e1_negacion_walk.png"
+dest_files=["res://.godot/imported/e1_negacion_walk.png-39027856ab6046e9e2f23e903643fb75.ctex"]
 
 [params]
 
