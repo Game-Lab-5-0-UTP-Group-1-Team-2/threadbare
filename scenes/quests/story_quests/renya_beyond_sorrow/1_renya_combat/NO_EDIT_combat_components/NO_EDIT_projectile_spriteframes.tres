@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://5v8hw4l6uuse"]
+
+[ext_resource type="Texture2D" uid="uid://cmnm88i5qn0fo" path="res://scenes/quests/story_quests/renya_beyond_sorrow/1_renya_combat/NO_EDIT_combat_components/NO_EDIT_projectile.png" id="1_yenqi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6ony"]
+atlas = ExtResource("1_yenqi")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6ony")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c2xay13ppsca1"
+path="res://.godot/imported/NO_EDIT_combat.dialogue-06670e42983d3379406fa409f92437bc.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/renya_beyond_sorrow/1_renya_combat/NO_EDIT_combat_components/NO_EDIT_combat.dialogue"
+dest_files=["res://.godot/imported/NO_EDIT_combat.dialogue-06670e42983d3379406fa409f92437bc.tres"]
+
+[params]
+
+defaults=true
