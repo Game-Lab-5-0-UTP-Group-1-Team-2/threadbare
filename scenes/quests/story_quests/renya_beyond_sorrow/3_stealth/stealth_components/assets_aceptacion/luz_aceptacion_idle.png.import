@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdchuvxrcnfjk"
-path="res://.godot/imported/renya_beyond_sorrow_guard_enemy_alerted.png-4fb9ae600ffb493f635348c9ae24c025.ctex"
+uid="uid://c2ixxxb3ro0wc"
+path="res://.godot/imported/luz_aceptacion_idle.png-36e67302f8cbbbc5b6efa0fb4c2bed47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/renya_beyond_sorrow_guard_enemy_alerted.png"
-dest_files=["res://.godot/imported/renya_beyond_sorrow_guard_enemy_alerted.png-4fb9ae600ffb493f635348c9ae24c025.ctex"]
+source_file="res://scenes/quests/story_quests/renya_beyond_sorrow/3_stealth/stealth_components/assets_aceptacion/luz_aceptacion_idle.png"
+dest_files=["res://.godot/imported/luz_aceptacion_idle.png-36e67302f8cbbbc5b6efa0fb4c2bed47.ctex"]
 
 [params]
 
